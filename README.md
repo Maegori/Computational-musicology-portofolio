@@ -10,9 +10,9 @@ These features are especially interesting to me in Beethoven’s sonatas from th
 
 Lastly, Arthur Schnabel and Claudio Arrau have both recorded their renditions in the thirties, while Richard Goode and Paul Lewis have recorded theirs in the 90s and 10s respectively. It will be interesting to see whether these two distinctive time periods have left their mark on the music.
 
-https://open.spotify.com/album/0TC4ndTblPOpZ5sbYKLouD?utm_source=discord&utm_medium=desktop&utm_source=embed_v2&go=1&play=1&nd=1
+https://open.spotify.com/album/0TC4ndTblPOpZ5sbYKLouD
 
-https://open.spotify.com/album/4YdnrlJo8YshOPIFnFnIxL?utm_source=discord&utm_medium=desktop&utm_source=embed_v2&go=1&play=1&nd=1
+https://open.spotify.com/album/4YdnrlJo8YshOPIFnFnIxL
 
 https://open.spotify.com/album/74bLPtOSrC7zSir6INgq5S?si=wEevmTKOSF2Fd5s4FBprmA
 
