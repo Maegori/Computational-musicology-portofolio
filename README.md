@@ -1,4 +1,5 @@
 # Computational-musicology-portofolio
+---
 
 For my corpus, I chose four pianists that took on the monumental task of playing all 32 of Beethoven’s sonatas: Arthur Schnabel, Claudio Arrau, Paul Lewis, and Richard Goode. Beethoven’s sonata legacy is certainly intimidating but has left all the pianists that came after him with more than enough room for their own interpretations of his work.
 
@@ -17,3 +18,4 @@ https://open.spotify.com/album/4YdnrlJo8YshOPIFnFnIxL
 https://open.spotify.com/album/74bLPtOSrC7zSir6INgq5S?si=wEevmTKOSF2Fd5s4FBprmA
 
 https://open.spotify.com/album/4bNwPPpk01D8pVV9IFSBde?si=B_yuvyZZTd6UFJs9udX90Q
+
