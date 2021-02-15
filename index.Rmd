@@ -7,24 +7,42 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(spotifyr)
+library(ggplot2)
+library(tidyr)
 ```
 
 ## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+For my corpus, I chose four pianists that took on the monumental task of playing all 32 of Beethoven’s sonatas: Arthur Schnabel, Claudio Arrau, Paul Lewis, and Richard Goode. Beethoven’s sonata legacy is certainly intimidating but has left all the pianists that came after him with more than enough room for their own interpretations of his work.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+These four pianists have all studio recorded their performances in one or more tempo markings. In total, this corpus consists out of 317 pieces.
 
-```{r cars}
-summary(cars)
+Spotify’s audio features are mainly geared towards more modern songs, with features like danceability and speechiness. However, I believe that the individual pianist’s fingerprints can still shine through in features like energy and tempo between the pieces.
+
+These features are especially interesting to me in Beethoven’s sonatas from the “late” period, which are notoriously difficult to play. These sonatas are: No. 28, No. 29, No. 30, No. 31, and No. 32. I believe that you truly have to make these sonatas your “own” in some way in order to master them, figuring out how these pianists do this from a computational musicology perspective is my ultimate goal for this portfolio.
+
+Lastly, Arthur Schnabel and Claudio Arrau have both recorded their renditions in the thirties, while Richard Goode and Paul Lewis have recorded theirs in the 90s and 10s respectively. It will be interesting to see whether these two distinctive time periods have left their mark on the music.
+
+https://open.spotify.com/album/0TC4ndTblPOpZ5sbYKLouD
+
+https://open.spotify.com/album/4YdnrlJo8YshOPIFnFnIxL
+
+https://open.spotify.com/album/74bLPtOSrC7zSir6INgq5S?si=wEevmTKOSF2Fd5s4FBprmA
+
+https://open.spotify.com/album/4bNwPPpk01D8pVV9IFSBde?si=B_yuvyZZTd6UFJs9udX90Q
+
+
+These are just some exploratory plots:
+
+```{r}
+music <- get_playlist_audio_features("","63kg8llpGnSc62Gxl98GRp")
+
+mut <- mutate(music, mode = ifelse(mode == 0, "minor", "major"))
+
+ggplot(music, aes(energy, loudness)) +geom_point() + geom_smooth() + ggtitle("Loudness vs. energy")
+ggplot(mut, aes(mode)) +geom_bar( width=0.5) + ggtitle("Amount of minor and major tracks")
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
